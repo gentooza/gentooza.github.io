@@ -21,6 +21,9 @@
 # local codium workspace
 gentooza.code-workspace
 
+# pelican output web
+output/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
