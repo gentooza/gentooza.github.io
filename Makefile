@@ -1,3 +1,23 @@
+# This file is part of Gentooza's web page
+#
+# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
+#
+# Gentooza's web page is free software:
+# you can redistribute it and/or modify it under the terms of
+# the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Gentooza's web page is distributed in the hope that
+# it will be useful, but WITHOUT ANY WARRANTY;
+# without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with Gentooza's web page.
+# If not, see <https://www.gnu.org/licenses/>.
+
 PY?=python3
 PELICAN?=pelican
 PELICANOPTS=
@@ -45,7 +65,7 @@ help:
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
 	@echo '   make devserver-global               regenerate and serve on 0.0.0.0    '
 	@echo '   make ssh_upload                     upload the web site via SSH        '
-    @echo '   make sftp_upload                    upload the web site via SFTP       '
+	@echo '   make sftp_upload                     upload the web site via SFTP      '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
