@@ -49,3 +49,14 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = "./theme"
+PROFILE_IMAGE_URL = "https://gentooza.pixelada.org/wp-content/uploads/2018/10/gentooza_title.gif"
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = (
+    ('Home', '/index.html'),
+    ('Sobre mí', '/pages/sobre-mi.html'),
+    ('Proyectos', '/pages/proyectos.html'),
+    ('Contacto', '/pages/contacto.html'),
+)
