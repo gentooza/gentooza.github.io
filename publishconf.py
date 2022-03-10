@@ -25,6 +25,7 @@ import os
 import sys
 import datetime
 sys.path.append(os.curdir)
+import proyects
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
@@ -40,3 +41,4 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+

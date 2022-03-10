@@ -18,6 +18,11 @@
 # along with Gentooza's web page.
 # If not, see <https://www.gnu.org/licenses/>.
 import datetime
+import os
+import sys
+sys.path.append(os.curdir)
+
+import projects
 
 AUTHOR = 'Joaquín Cuéllar'
 SITENAME = "Gentooza's web page"
@@ -65,3 +70,7 @@ LICENSE_URL="https://www.gnu.org/licenses/agpl-3.0.html"
 LICENSE_NAME="AGPLv3+"
 
 CURRENT_YEAR = datetime.datetime.now().year
+
+PROY_CATEGORIES = projects.CATEGORIES
+
+PROJECTS = projects.projects
