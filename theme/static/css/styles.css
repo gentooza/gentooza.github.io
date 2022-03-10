@@ -12,7 +12,7 @@ html { /* This stuff is for the sticky footer. */
 
 body {
     background-color:#fafafa;
-    font-family:'Open Sans';
+    font-family:'Roboto';
     margin: 20px auto 100px auto; /* For sticky footer. */
 }
 
@@ -30,11 +30,14 @@ body {
 }
 
 .siteheader {
+    position: sticky;
+    top: 0;
     margin-bottom: 30px;
     overflow: visible;
     max-width: 800px;
     margin: auto;
     padding-bottom: 20px;
+    background: #fafafa;
 }
 
 .sitetitle {
@@ -62,11 +65,18 @@ body {
 .menu {
     font-size: 1.3em;
     /* padding-left: 30px; */
+    background: lightgrey;
 }
 
 .menu li {
     display: inline;
     margin-right: 10px;
+}
+
+.menu a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Article list on index page. */
@@ -112,13 +122,16 @@ a { /* Generic link styling, greyish and underlined. */
     /* Links that aren't just in content areas shouldn't be underlined */
     text-decoration: none;
 }
+.active {
+    font-weight: 800;
+}
 
 a:hover { /* Hover style: transition to orange. Cool! */
     -o-transition:color .2s ease-in-out;
     -webkit-transition:color .2s ease-in-out;
     -moz-transition:color .2s ease-in-out;
     transition:color .2s ease-in-out;
-    color: orange;
+    color: purple;
 }
 
 /* Generic to all content. */
@@ -248,4 +261,11 @@ footer {
     font-size: .7em;
     height: 30px;
     position: absolute;
+    width: 90%;
+    margin-left: 5%;
 }
+@media only screen and (max-width: 600px) {
+    footer {
+        text-align: center;
+    }
+  }
