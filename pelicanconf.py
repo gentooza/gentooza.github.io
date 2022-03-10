@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with Gentooza's web page.
 # If not, see <https://www.gnu.org/licenses/>.
+import datetime
 
 AUTHOR = 'Joaquín Cuéllar'
 SITENAME = "Gentooza's web page"
@@ -60,3 +61,7 @@ MENUITEMS = (
     ('Proyectos', '/pages/proyectos.html'),
     ('Contacto', '/pages/contacto.html'),
 )
+LICENSE_URL="https://www.gnu.org/licenses/agpl-3.0.html"
+LICENSE_NAME="AGPLv3+"
+
+CURRENT_YEAR = datetime.datetime.now().year

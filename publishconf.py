@@ -23,6 +23,7 @@
 
 import os
 import sys
+import datetime
 sys.path.append(os.curdir)
 from pelicanconf import *
 
