@@ -35,6 +35,7 @@ class project:
         self.github = ''
         self.savannah = ''
         self.bitbucket = ''
+        self.gitlab = ''
 
         self.title = ''
         self.description = ''
@@ -72,3 +73,66 @@ socias.savannah = "https://savannah.nongnu.org/projects/sociasmercao/"
 socias.category = "social"
 projects.append(socias)
 
+maimo = project()
+maimo.title = "MaimoNides"
+maimo.description = "Mi proyecto final de Máster en Informática Industrial. Es un sistema de publicidad empotrado, en C para implementarse en un Raspberry PI."
+maimo.savannah = "https://savannah.nongnu.org/projects/maimonides/"
+maimo.doc = "http://repositorio.ual.es:8080/handle/10835/2823"
+maimo.category = "tools"
+projects.append(maimo)
+
+lhs = project()
+lhs.title = "License Header Script"
+lhs.description = "Sencillo  script en BASH para automatizar la inserción de la cabecera de licencia en un programa de software libre cualquiera."
+lhs.savannah = "https://github.com/gentooza/license_header_script"
+lhs.category = "tools"
+projects.append(lhs)
+
+quetalk = project()
+quetalk.title = "QueTalk"
+quetalk.description = "Desarrollado en C++, QXMPP, QT5.  programa descontinuado ya que estaba pensado para ser un cliente de Kontalk en el sistema para móviles de Ubuntu. Fork del programa <a target=\"_blank\" href=\"https://github.com/chloerei/qtalk\">QTalk desarrollado por REI.</a>"
+quetalk.savannah = "https://github.com/gentooza/QueTalk"
+quetalk.category = "tools"
+projects.append(quetalk)
+
+FFMM = project()
+FFMM.title = "Freedom Fighters of Might and Magic"
+FFMM.description = "Un día me puse a aprender python y pygame y dejé esto a medias :-e un clon apenas planteado del Heroes of Might And Magic II."
+FFMM.savannah = "https://github.com/gentooza/Freedom-Fighters-of-Might-Magic"
+FFMM.category = "videogames"
+projects.append(FFMM)
+
+gsresolver = project()
+gsresolver.title = "GSResolver"
+gsresolver.description = "Aprendiendo como programar C++ usando plugins, me puse a desarrollar un resolutor de sudokus, es un programa de consola usando ncurses que implementa los algoritmos personalizados de resolución en forma de librerías .so independientes y dinámicamente cargadas en programa."
+gsresolver.github = "https://github.com/gentooza/GSResolver"
+gsresolver.category = "videogames"
+projects.append(gsresolver)
+
+dentaltea = project()
+dentaltea.title = "DentalTEA"
+dentaltea.description = "Usando typescript, Ionic, y Cordova, aplicación híbrida para las citas al dentista de personas con trastorno autista, para la asociación Autismo Córdoba."
+dentaltea.bitbucket = "https://bitbucket.org/pixelada/appautismocordoba/src/master/"
+dentaltea.category = "hybrid"
+projects.append(dentaltea)
+
+appsem = project()
+appsem.title = "semApp"
+appsem.description = "Usando typescript, Ionic, y Cordova, aplicación híbrida de carnet virtual de los afiliados de un conocido sindicato andaluz."
+appsem.github = "https://github.com/Pixelada-S-Coop-And/SEM-app"
+appsem.category = "hybrid"
+projects.append(appsem)
+
+soberania = project()
+soberania.title = "Guía de alternativas tecnológicas"
+soberania.description = "Basada en una guía originalmente de Pixelada, para el <a target=\"_blank\" href=\"https://reasmadrid.org/encuentro-internacional-cordoba/\"> Encuentro Internacional de Economías Transformadoras, en Córdoba 2018</a>, desarrollada actualmetne dentro del <a target=\"_blank\" href=\"https://latejedora.org\"> Mercao Social de Córdoba, La Tejedora</a> , una guía de criterio a colectivos e individuales, de adquisición de programas y hardware informático."
+soberania.gitlab = "https://gitlab.com/la-tejedora/soberania-tecnologica"
+soberania.category = "guides"
+projects.append(soberania)
+
+tallerlicenciado = project()
+tallerlicenciado.title = "Taller de licenciado de software libre"
+tallerlicenciado.description = "Guión del taller a impartir para el <a target=\"_blank\" href=\"https://www.uco.es/aulasoftwarelibre/\">Aula de Software Libre de la Universidad de Córdoba</a>, el <a target=\"_blank\" href=\"https://ideas.aulasoftwarelibre.uco.es/idea/taller-para-el-licenciado-de-software-libre\"> 15 Marzo de 2022.</a>"
+tallerlicenciado.github = "https://github.com/gentooza/taller-licenciado-software"
+tallerlicenciado.category = "guides"
+projects.append(tallerlicenciado)

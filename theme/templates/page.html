@@ -33,6 +33,9 @@
                 {% if p.bitbucket != '' %}
                   <a target="_blank" href="{{ p.bitbucket }}"><i class="fa fa-bitbucket fa-lg" aria-hidden="true"></i></a>
                 {% endif %}
+                {% if p.gitlab != '' %}
+                <a target="_blank" href="{{ p.gitlab }}"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a>
+              {% endif %}
               </p>
             </div>
           {% endif %}

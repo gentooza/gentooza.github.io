@@ -7,5 +7,5 @@ Modified: 2022-03-10 11:27
 <p> Estoy interesado en las <a target="_blank" href="https://es.wikipedia.org/wiki/Econom%C3%ADa_transformadora">Economías Transformadoras</a>, en el cooperativismo como forma de organización laboral justa, en las tecnologías libres (tanto <a target="_blank" href="https://es.wikipedia.org/wiki/Software_libre">unas</a> como <a target="_blank" href="https://es.wikipedia.org/wiki/Hardware_libre">otras</a> :-D),
    en el control industrial, el ecologismo, feminismo...
  </p>
- <p> Si tienes curiosidad, si no sabes por donde empezar pero quieres trabajar y vivir así, o si ya has dado tumbos y te hastía el empresariado que encuentras... <a target="_blank" href="mailto:joa.cuellar@riseup">¡hablemos!</a>  </p>
+ <p> Si tienes curiosidad, si no sabes por donde empezar pero quieres trabajar y vivir así, o si ya has dado tumbos y te hastía el empresariado que encuentras... <a target="_blank" href="mailto:joa.cuellar@riseup.net">¡hablemos!</a>  </p>
  <p> Actualmente formo parte de <a target="_blank" href="https://pixelada.org">Pixelada S. Coop. And.</a></p>
