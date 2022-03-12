@@ -156,7 +156,7 @@ a:hover { /* Hover style: transition to orange. Cool! */
 .content {
     max-width: 800px;
     margin: auto;
-    padding-top: 5vh;
+    padding: 5vh 5px 0;
 }
 .content p {
     line-height: 1.3;
