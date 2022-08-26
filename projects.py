@@ -25,6 +25,7 @@ CATEGORIES = (
     ('industrial', 'Industriales, SCADA, control...'),
     ('social', 'Movimientos sociales'),
     ('hybrid', 'Aplicaciones híbridas para móvil'),
+    ('robotics', 'Aplicaciones sobre robótica'),
     ('guides', 'Talleres, manuales, guías...'),
     ('tools', 'Utilidades y otros'),
     ('videogames', 'Videojuegos!'),
@@ -136,3 +137,10 @@ tallerlicenciado.description = "Guión del taller a impartir para el <a target=\
 tallerlicenciado.github = "https://github.com/gentooza/taller-licenciado-software"
 tallerlicenciado.category = "guides"
 projects.append(tallerlicenciado)
+
+bitbloq = project()
+bitbloq.title = "Bitbloq Offline Reborn"
+bitbloq.description = "Aplicación para la programación local de los robots Zowie de BQ. Con la caída de la empresa y la divisón de su sección robótica ahora sólo ofrecen la versión online de la herramienta y bajo registro. ¡Yo quiero que mis hijos pueda programarlo en un entorno local y seguro!"
+bitbloq.github = "https://github.com/gentooza/bitbloq-offline-reborn"
+bitbloq.category = "robotics"
+projects.append(bitbloq)
