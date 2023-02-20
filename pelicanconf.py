@@ -13,16 +13,19 @@
 # without even the implied warranty of MERCHANTABILITY or
 # FITNESS FOR A PARTICULAR PURPOSE.
 # See the GNU Affero General Public License for more details.
+# See the GNU Affero General Public License for more details.
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with Gentooza's web page.
 # If not, see <https://www.gnu.org/licenses/>.
+
 import datetime
 import os
 import sys
 sys.path.append(os.curdir)
 
 import projects
+
 
 AUTHOR = 'Joaquín Cuéllar'
 SITENAME = "Gentooza's web page"
