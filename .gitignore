@@ -24,6 +24,9 @@ gentooza.code-workspace
 # pelican output web
 output/
 
+# images are not open sourced!
+theme/static/images
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
