@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # This file is part of Gentooza's web page
 #
-# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
+# Copyright 2021-2023, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
 #
 # Gentooza's web page is free software:
 # you can redistribute it and/or modify it under the terms of
