@@ -1,6 +1,6 @@
 # This file is part of Gentooza's web page
 #
-# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
+# Copyright 2021-2023, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
 #
 # Gentooza's web page is free software:
 # you can redistribute it and/or modify it under the terms of
@@ -28,10 +28,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=vps.pixelada.org
-SSH_PORT=24752
-SSH_USER=pixelada_gentooza
-SSH_TARGET_DIR=/var/www/gentooza.pixelada.org/web
+GITHUB_PAGES_BRANCH=main
 
 
 DEBUG ?= 0
@@ -64,9 +61,7 @@ help:
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
 	@echo '   make devserver-global               regenerate and serve on 0.0.0.0    '
-	@echo '   make ssh_upload                     upload the web site via SSH        '
-	@echo '   make sftp_upload                     upload the web site via SFTP      '
-	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
+	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -96,14 +91,9 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
-ssh_upload: publish
-	scp -P $(SSH_PORT) -r "$(OUTPUTDIR)"/* "$(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)"
-
-sftp_upload: publish
-	printf 'put -r $(OUTPUTDIR)/*' | sftp $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-
-rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --include tags --cvs-exclude --delete "$(OUTPUTDIR)"/ "$(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)"
+github: publish
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)"
+	git push origin $(GITHUB_PAGES_BRANCH)
 
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload
+.PHONY: html help clean regenerate serve serve-global devserver publish github
