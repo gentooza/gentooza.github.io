@@ -60,7 +60,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 THEME = "./theme"
-PROFILE_IMAGE_URL = "https://gentooza.pixelada.org/wp-content/uploads/2018/10/gentooza_title.gif"
+PROFILE_IMAGE_URL = "https://gentooza.github.io/theme/images/web_title-1.gif"
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
