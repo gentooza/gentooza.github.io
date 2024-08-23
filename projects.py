@@ -56,7 +56,7 @@ projects.append(piresiduos)
 
 picomm = project()
 picomm.title = "Pixelada Comms Translator"
-picomm.description = "En <strong>C++</strong>, usando como framework <a target=\"_blank\" href=\"https://pvbrowser.de\">pvbrowser</a>, es un software que pretende hacer de OPC o capa traductora intermedia, entre comunicaciones industriales modernas y sistemas de supervisión que no los acepten, pero si acepten conexiones a base de datos remotas o de windows tipo ODBC. Mi proyecto final de grado, <strong> matrícula de honor!</strong><br/>Bajo licencia libre GPLv3+."
+picomm.description = "En <strong>C++</strong>, usando como framework <a target=\"_blank\" href=\"https://pvbrowser.de\">pvbrowser</a>, es un software que pretende hacer de OPC o capa traductora intermedia, entre comunicaciones industriales modernas y sistemas de supervisión que no los acepten, pero si acepten conexiones a base de datos remotas o de windows tipo ODBC.<br/>Mi proyecto final de grado, <strong> matrícula de honor!</strong><br/>Bajo licencia libre GPLv3+."
 picomm.github = "https://github.com/Pixelada-S-Coop-And/Pixelada-Comms-Translator"
 picomm.category = "industrial"
 projects.append(picomm)
@@ -78,7 +78,7 @@ projects.append(gstools)
 
 conil = project()
 conil.title = "Portal Conilhospeda"
-conil.description = "<strong> Busco mantenedora/or para este proyecto!!</strong> Usando <strong>Python y Django</strong> Es el <a target=\"_blank\" href=\"https://conilhospeda.com\"> portal web de reservas de la Cooperativa Conilhospeda.</a> Es un proyecto muy bonito que proviene de la <a target=\"_blank\" href=\"https://enreda.coop\">Cooperativa Enreda </a>, paso a manos de <a target=\"_blank\" href=\"https://pixelada.org\">Pixelada</a> y finalmente se mantiene dentro <a target=\"_blank\" href=\"https://elalambre.org\">del Alambre.</a> Se está cobrando un mantenimiento mensual por los trabajos!<br/>Es software privativo (pero tenemos planes de abrirlo!)."
+conil.description = "<strong> Busco mantenedora/or para este proyecto!!</strong> Usando <strong>Python y Django</strong> Es el <a target=\"_blank\" href=\"https://conilhospeda.com\"> portal web de reservas de la Cooperativa Conilhospeda.</a><br/>Un proyecto muy bonito que proviene de la <a target=\"_blank\" href=\"https://enreda.coop\">Cooperativa Enreda </a>, paso a manos de <a target=\"_blank\" href=\"https://pixelada.org\">Pixelada</a> y finalmente se mantiene dentro <a target=\"_blank\" href=\"https://elalambre.org\">del Alambre.</a> Se está cobrando un mantenimiento mensual por los trabajos!<br/>Es software privativo (pero tenemos planes de abrirlo!)."
 conil.category = "social"
 projects.append(conil)
 
@@ -141,7 +141,7 @@ projects.append(appsem)
 
 mpich = project()
 mpich.title = "Entorno para pŕacticas con MPICH bajo docker"
-mpich.description = "Basado en el trabajo de <a target=\"_blank\" href=\"https://github.com/NLKNguyen/alpine-mpich\"> N. Nguyen </a>, he actualizado y modificado una imagen y un clúster de Alpine GNU/Linux en docker, para poder realizar prácticas de Arquitecturas Paralelas, asignatura de 3º del Grado de Informática en su mención de <strong> Arquitectura de Computadores </strong>, Arquitecturas Paralelas, para poder emplear con mínimo esfuerzo, <strong> C y MPICH <strong> y realizar prácticas de programación distribuida pudiendo medir recursos y tiempo de cómputo con un hardware simulado pero limitado.<br/>Bajo licencia libre MIT."
+mpich.description = "Basado en el trabajo de <a target=\"_blank\" href=\"https://github.com/NLKNguyen/alpine-mpich\"> N. Nguyen </a>, he actualizado y modificado una imagen y un clúster de Alpine GNU/Linux en docker, para poder realizar prácticas de Arquitecturas Paralelas, asignatura de 3º del Grado de Informática en su mención de <strong> Arquitectura de Computadores </strong>, Arquitecturas Paralelas, para poder emplear con mínimo esfuerzo, <strong> C y MPICH </strong> y realizar prácticas de programación distribuida pudiendo medir recursos y tiempo de cómputo con un hardware simulado pero limitado.<br/>Bajo licencia libre MIT."
 mpich.github = "https://github.com/gentooza/alpine-mpich"
 mpich.doc = "https://ieeexplore.ieee.org/document/7868429"
 mpich.category = "guides"
@@ -170,7 +170,7 @@ projects.append(bitbloq)
 
 tock = project()
 tock.title = "Investigación en mi tésis doctoral"
-tock.description = "No tengo nada bajo licencia libre, pero trabajo destripando <a target=\"_blank\" href=\"https://tockos.org/\">Tock OS</a>, un sistema desarrollado puramente en <strong> Rust </strong> para sistemas empotrados, me interesa medir tiempos de cómputo empleando diversos lenguajes de programación en la capa de aplicación, distintos algoritmos... Migrarlo a Risc-V para los esp32-C3 y esp32-c6... A ver a donde me lleva esto :-D"
+tock.description = "No tengo nada bajo licencia libre, pero trabajo destripando <a target=\"_blank\" href=\"https://tockos.org/\">Tock OS</a>, un sistema desarrollado puramente en <strong> Rust </strong> para sistemas empotrados.<br/>Me interesa medir tiempos de cómputo empleando diversos lenguajes de programación en la capa de aplicación, distintos algoritmos... Migrarlo a Risc-V para los esp32-C3 y esp32-c6... A ver a donde me lleva esto :-D"
 tock.github = "https://github.com/tock/tock"
 tock.category = "research"
 projects.append(tock)
