@@ -149,14 +149,14 @@ projects.append(mpich)
 
 soberania = project()
 soberania.title = "Guía de alternativas tecnológicas"
-soberania.description = "Basada en una guía originalmente de Pixelada, para el <a target=\"_blank\" href=\"https://reasmadrid.org/encuentro-internacional-cordoba/\"> Encuentro Internacional de Economías Transformadoras, en Córdoba 2018</a>, desarrollada actualmetne dentro del <a target=\"_blank\" href=\"https://latejedora.org\"> Mercao Social de Córdoba, La Tejedora</a> , una guía de criterio a colectivos e individuales, de adquisición de programas y hardware informático. Se ha empleado recientemente en el <a target=\"_blank\" href=\"https://cfp.us.es/cursos/mu/politicas-y-practicas-para-un-desarrollo-humano-sostenible\"> Máster de Políticas Y Prácticas para un Desarrollo Humano Sostenible 2024</a>.<br/>Bajo licencia libre CC-BY."
+soberania.description = "Basada en una guía originalmente de Pixelada, para el <a target=\"_blank\" href=\"https://reasmadrid.org/encuentro-internacional-cordoba/\"> Encuentro Internacional de Economías Transformadoras, en Córdoba 2018</a>, desarrollada actualmetne dentro del <a target=\"_blank\" href=\"https://latejedora.org\"> Mercao Social de Córdoba, La Tejedora</a> , una guía de criterio a colectivos e individuales, de adquisición de programas y hardware informático.<br/><strong>Se ha empleado recientemente en el <a target=\"_blank\" href=\"https://cfp.us.es/cursos/mu/politicas-y-practicas-para-un-desarrollo-humano-sostenible\"> Máster de Políticas Y Prácticas para un Desarrollo Humano Sostenible 2024</a></strong>.<br/>Bajo licencia libre CC-BY."
 soberania.gitlab = "https://gitlab.com/la-tejedora/soberania-tecnologica"
 soberania.category = "guides"
 projects.append(soberania)
 
 tallerlicenciado = project()
 tallerlicenciado.title = "Taller de licenciado de software libre"
-tallerlicenciado.description = "Guión del taller a impartir para el <a target=\"_blank\" href=\"https://www.uco.es/aulasoftwarelibre/\">Aula de Software Libre de la Universidad de Córdoba</a>, el <a target=\"_blank\" href=\"https://ideas.aulasoftwarelibre.uco.es/idea/taller-para-el-licenciado-de-software-libre\"> 15 Marzo de 2022.</a><br/>Bajo licencia libre GPLv3+."
+tallerlicenciado.description = "Guión del taller a impartir para el <a target=\"_blank\" href=\"https://www.uco.es/aulasoftwarelibre/\">Aula de Software Libre de la Universidad de Córdoba</a>, el <a target=\"_blank\" href=\"https://ideas.aulasoftwarelibre.uco.es/idea/taller-para-el-licenciado-de-software-libre\"> 15 Marzo de 2022.</a><br/>Bajo licencia libre CC-BY."
 tallerlicenciado.github = "https://github.com/gentooza/taller-licenciado-software"
 tallerlicenciado.category = "guides"
 projects.append(tallerlicenciado)
