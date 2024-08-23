@@ -29,13 +29,18 @@ import projects
 
 AUTHOR = 'Joaquín Cuéllar'
 SITENAME = "Gentooza's web page"
-SITEURL = ''
+SITEURL = "https://gentooza.github.com"
+
+print(SITEURL)
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Madrid'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'es'
+LANGS = {'es', 'en'}
+
+RELATIVE_URLS = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
