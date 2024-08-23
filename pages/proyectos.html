@@ -1,47 +1,6 @@
-<!--
-# This file is part of Gentooza's web page
-#
-# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
-#
-# Gentooza's web page is free software:
-# you can redistribute it and/or modify it under the terms of
-# the GNU Affero General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# Gentooza's web page is distributed in the hope that
-# it will be useful, but WITHOUT ANY WARRANTY;
-# without even the implied warranty of MERCHANTABILITY or
-# FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with Gentooza's web page.
-# If not, see <https://www.gnu.org/licenses/>.
--->
-<!--
-# This file is part of Gentooza's web page
-#
-# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
-#
-# Gentooza's web page is free software:
-# you can redistribute it and/or modify it under the terms of
-# the GNU Affero General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# Gentooza's web page is distributed in the hope that
-# it will be useful, but WITHOUT ANY WARRANTY;
-# without even the implied warranty of MERCHANTABILITY or
-# FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with Gentooza's web page.
-# If not, see <https://www.gnu.org/licenses/>.
--->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
       <title>Gentooza's web page</title>
@@ -52,7 +11,178 @@
       <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
       <link rel="stylesheet" type="text/css" href="/theme/css/styles.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="utf-8" />
+      <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/theme/css/projects.css"/>
+<style>
+#check-research, .project-research {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-research span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-research:checked ~  .project-research  {
+    display: block;
+}
+
+#check-research:checked ~ .section-research span {
+    display: none;
+}
+
+#check-industrial, .project-industrial {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-industrial span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-industrial:checked ~  .project-industrial  {
+    display: block;
+}
+
+#check-industrial:checked ~ .section-industrial span {
+    display: none;
+}
+
+#check-social, .project-social {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-social span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-social:checked ~  .project-social  {
+    display: block;
+}
+
+#check-social:checked ~ .section-social span {
+    display: none;
+}
+
+#check-guides, .project-guides {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-guides span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-guides:checked ~  .project-guides  {
+    display: block;
+}
+
+#check-guides:checked ~ .section-guides span {
+    display: none;
+}
+
+#check-tools, .project-tools {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-tools span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-tools:checked ~  .project-tools  {
+    display: block;
+}
+
+#check-tools:checked ~ .section-tools span {
+    display: none;
+}
+
+#check-robotics, .project-robotics {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-robotics span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-robotics:checked ~  .project-robotics  {
+    display: block;
+}
+
+#check-robotics:checked ~ .section-robotics span {
+    display: none;
+}
+
+#check-hybrid, .project-hybrid {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-hybrid span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-hybrid:checked ~  .project-hybrid  {
+    display: block;
+}
+
+#check-hybrid:checked ~ .section-hybrid span {
+    display: none;
+}
+
+#check-videogames, .project-videogames {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-videogames span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-videogames:checked ~  .project-videogames  {
+    display: block;
+}
+
+#check-videogames:checked ~ .section-videogames span {
+    display: none;
+}
+
+</style>
   </head>
 
   <body id="index">
@@ -89,143 +219,183 @@
     <h1>Proyectos</h1>
     
     
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Industriales, SCADA, control... </h3>
+        <input id="check-research" type="radio" name="menu" />
+        <div class="project-section section-research">
+            <h3 style="font-weight: 700">
+            <label for="check-research"> Investigación 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-research" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
         </div>
-            <div class="project">
+            <div class="project project-research">
+              <p class="title">
+                Investigación en mi tésis doctoral
+              </p>
+              <p class="description">
+                No tengo nada bajo licencia libre, pero trabajo destripando <a target="_blank" href="https://tockos.org/">Tock OS</a>, un sistema desarrollado puramente en <strong> Rust </strong> para sistemas empotrados, me interesa medir tiempos de cómputo empleando diversos lenguajes de programación en la capa de aplicación, distintos algoritmos... Migrarlo a Risc-V para los esp32-C3 y esp32-c6... A ver a donde me lleva esto :-D
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://github.com/tock/tock"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+        <input id="check-industrial" type="radio" name="menu" />
+        <div class="project-section section-industrial">
+            <h3 style="font-weight: 700">
+            <label for="check-industrial"> Industriales, SCADA, control... 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-industrial" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
+        </div>
+            <div class="project project-industrial">
+              <p class="title">
+                piResiduos
+              </p>
+              <p class="description">
+                <strong> PROYECTO ACTIVO! </strong> En <strong>C++</strong>, usando como framework <a target="_blank" href="https://pvbrowser.de">pvbrowser</a>, es un programa de gestión local de entrada y salida de material de estaciones de tratamiento o transferencia de Residuos. Conecta con varios dispositivos locales como básculas y cámaras de detección de matrículas, y se sincroniza con un servidor central de administración mediante un túnel SSH.<br/>Bajo licencia libre GPLv3+.
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://github.com/gentooza/piResiduos"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+            <div class="project project-industrial">
+              <p class="title">
+                Pixelada Comms Translator
+              </p>
+              <p class="description">
+                En <strong>C++</strong>, usando como framework <a target="_blank" href="https://pvbrowser.de">pvbrowser</a>, es un software que pretende hacer de OPC o capa traductora intermedia, entre comunicaciones industriales modernas y sistemas de supervisión que no los acepten, pero si acepten conexiones a base de datos remotas o de windows tipo ODBC. Mi proyecto final de grado, <strong> matrícula de honor!</strong><br/>Bajo licencia libre GPLv3+.
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://github.com/Pixelada-S-Coop-And/Pixelada-Comms-Translator"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+            <div class="project project-industrial">
               <p class="title">
                 SCADA Plastic Rolling Machine
               </p>
               <p class="description">
-                Programa  en C++ basado en <a target="_blank" href="https://pvbrowser.de">pvbrowser</a>, configurado en una pantalla táctil con Debian 7 Wheezy y comunicaciones MODBUS TCP/IP y MODBUS RTU de supervisión de una máquina industrial bobinadora de plástico.
+                Programa en <strong>C++</strong> basado en <a target="_blank" href="https://pvbrowser.de">pvbrowser</a>, configurado en una pantalla táctil con Debian 7 Wheezy y comunicaciones MODBUS TCP/IP y MODBUS RTU de supervisión de una máquina industrial bobinadora de plástico.<br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a class="social" target="_blank" href="https://savannah.nongnu.org/projects/rb1000"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
+                  <a target="_blank" href="https://github.com/gentooza/rbMIL"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+            <div class="project project-industrial">
               <p class="title">
                 gStools (Gentooza’s SCADA tools)
               </p>
               <p class="description">
-                Es una librería en C de utilidades de uso común en cualquier desarrollo industrial, desde conversión de datos WORD, DINT, REAL… tratamiento de fechas (fecha Juliana), etc.
+                Es una <strong>librería en C</strong> de utilidades de uso común en cualquier desarrollo industrial, desde conversión de datos WORD, DINT, REAL… tratamiento de fechas (fecha Juliana), etc.<br/>Bajo licencia libre GPLv2+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a target="_blank" href="https://github.com/gentooza/gStools"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+        <input id="check-social" type="radio" name="menu" />
+        <div class="project-section section-social">
+            <h3 style="font-weight: 700">
+            <label for="check-social"> Movimientos sociales 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-social" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
+        </div>
+            <div class="project project-social">
               <p class="title">
-                piResiduos
+                Portal Conilhospeda
               </p>
               <p class="description">
-                En C++, usando como framework <a target="_blank" href="https://pvbrowser.de">pvbrowser</a>, es un programa de gestión local de entrada y salida de material de estaciones de tratamiento o transferencia de Residuos. Conecta con varios dispositivos locales como básculas y cámaras de detección de matrículas, y se sincroniza con un servidor central de administración mediante un túnel SSH.
+                <strong> Busco mantenedora/or para este proyecto!!</strong> Usando <strong>Python y Django</strong> Es el <a target="_blank" href="https://conilhospeda.com"> portal web de reservas de la Cooperativa Conilhospeda.</a> Es un proyecto muy bonito que proviene de la <a target="_blank" href="https://enreda.coop">Cooperativa Enreda </a>, paso a manos de <a target="_blank" href="https://pixelada.org">Pixelada</a> y finalmente se mantiene dentro <a target="_blank" href="https://elalambre.org">del Alambre.</a> Se está cobrando un mantenimiento mensual por los trabajos!<br/>Es software privativo (pero tenemos planes de abrirlo!).
               </p>
               <p class="project_links">
                 enlaces:<br/>
-                  <a target="_blank" href="https://github.com/Pixelada-S-Coop-And/piResiduos2"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Movimientos sociales </h3>
-        </div>
-            <div class="project">
+            <div class="project project-social">
               <p class="title">
                 SociasMercao
               </p>
               <p class="description">
-                en PHP como módulo de la aplicación ERP <a target="_blank" href="https://www.dolibarr.org/">Dolibarr</a>, módulo de gestión de socias, sus cuotas, crédito, y su aplicación en las compras en tienda. Trabajando dentro del <a target="_blank" href="https://latejedora.org">Mercao Social de Córdoba, La Tejedora.</a>
+                En <strong>PHP</strong> como módulo de la aplicación ERP <a target="_blank" href="https://www.dolibarr.org/">Dolibarr</a>, módulo de gestión de socias, sus cuotas, crédito, y su aplicación en las compras en tienda. Trabajando dentro del <a target="_blank" href="https://latejedora.org">Mercao Social de Córdoba, La Tejedora.</a><br/>Bajo licencia libre AGPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a class="social" target="_blank" href="https://savannah.nongnu.org/projects/sociasmercao/"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Aplicaciones híbridas para móvil </h3>
+        <input id="check-guides" type="radio" name="menu" />
+        <div class="project-section section-guides">
+            <h3 style="font-weight: 700">
+            <label for="check-guides"> Docencia, Talleres, manuales ... 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-guides" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
         </div>
-            <div class="project">
+            <div class="project project-guides">
               <p class="title">
-                DentalTEA
+                Entorno para pŕacticas con MPICH bajo docker
               </p>
               <p class="description">
-                Usando typescript, Ionic, y Cordova, aplicación híbrida para las citas al dentista de personas con trastorno autista, para la asociación Autismo Córdoba.
+                Basado en el trabajo de <a target="_blank" href="https://github.com/NLKNguyen/alpine-mpich"> N. Nguyen </a>, he actualizado y modificado una imagen y un clúster de Alpine GNU/Linux en docker, para poder realizar prácticas de Arquitecturas Paralelas, asignatura de 3º del Grado de Informática en su mención de <strong> Arquitectura de Computadores </strong>, Arquitecturas Paralelas, para poder emplear con mínimo esfuerzo, <strong> C y MPICH <strong> y realizar prácticas de programación distribuida pudiendo medir recursos y tiempo de cómputo con un hardware simulado pero limitado.<br/>Bajo licencia libre MIT.
               </p>
               <p class="project_links">
                 enlaces:<br/>
-                  <a target="_blank" href="https://bitbucket.org/pixelada/appautismocordoba/src/master/"><i class="fa fa-bitbucket fa-lg" aria-hidden="true"></i></a>
+                  <a target="_blank" href="https://ieeexplore.ieee.org/document/7868429"><i class="fa fa-file-o fa-lg" aria-hidden="true"></i></a>
+                  <a target="_blank" href="https://github.com/gentooza/alpine-mpich"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
-              <p class="title">
-                semApp
-              </p>
-              <p class="description">
-                Usando typescript, Ionic, y Cordova, aplicación híbrida de carnet virtual de los afiliados de un conocido sindicato andaluz.
-              </p>
-              <p class="project_links">
-                enlaces:<br/>
-                  <a target="_blank" href="https://github.com/Pixelada-S-Coop-And/SEM-app"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-              </p>
-            </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Aplicaciones sobre robótica </h3>
-        </div>
-            <div class="project">
-              <p class="title">
-                Bitbloq Offline Reborn
-              </p>
-              <p class="description">
-                Aplicación para la programación local de los robots Zowie de BQ. Con la caída de la empresa y la divisón de su sección robótica ahora sólo ofrecen la versión online de la herramienta y bajo registro. ¡Yo quiero que mis hijos pueda programarlo en un entorno local y seguro!
-              </p>
-              <p class="project_links">
-                enlaces:<br/>
-                  <a target="_blank" href="https://github.com/gentooza/bitbloq-offline-reborn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-              </p>
-            </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Talleres, manuales, guías... </h3>
-        </div>
-            <div class="project">
+            <div class="project project-guides">
               <p class="title">
                 Guía de alternativas tecnológicas
               </p>
               <p class="description">
-                Basada en una guía originalmente de Pixelada, para el <a target="_blank" href="https://reasmadrid.org/encuentro-internacional-cordoba/"> Encuentro Internacional de Economías Transformadoras, en Córdoba 2018</a>, desarrollada actualmetne dentro del <a target="_blank" href="https://latejedora.org"> Mercao Social de Córdoba, La Tejedora</a> , una guía de criterio a colectivos e individuales, de adquisición de programas y hardware informático.
+                Basada en una guía originalmente de Pixelada, para el <a target="_blank" href="https://reasmadrid.org/encuentro-internacional-cordoba/"> Encuentro Internacional de Economías Transformadoras, en Córdoba 2018</a>, desarrollada actualmetne dentro del <a target="_blank" href="https://latejedora.org"> Mercao Social de Córdoba, La Tejedora</a> , una guía de criterio a colectivos e individuales, de adquisición de programas y hardware informático. Se ha empleado recientemente en el <a target="_blank" href="https://cfp.us.es/cursos/mu/politicas-y-practicas-para-un-desarrollo-humano-sostenible"> Máster de Políticas Y Prácticas para un Desarrollo Humano Sostenible 2024</a>.<br/>Bajo licencia libre CC-BY.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                 <a target="_blank" href="https://gitlab.com/la-tejedora/soberania-tecnologica"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+            <div class="project project-guides">
               <p class="title">
                 Taller de licenciado de software libre
               </p>
               <p class="description">
-                Guión del taller a impartir para el <a target="_blank" href="https://www.uco.es/aulasoftwarelibre/">Aula de Software Libre de la Universidad de Córdoba</a>, el <a target="_blank" href="https://ideas.aulasoftwarelibre.uco.es/idea/taller-para-el-licenciado-de-software-libre"> 15 Marzo de 2022.</a>
+                Guión del taller a impartir para el <a target="_blank" href="https://www.uco.es/aulasoftwarelibre/">Aula de Software Libre de la Universidad de Córdoba</a>, el <a target="_blank" href="https://ideas.aulasoftwarelibre.uco.es/idea/taller-para-el-licenciado-de-software-libre"> 15 Marzo de 2022.</a><br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a target="_blank" href="https://github.com/gentooza/taller-licenciado-software"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Utilidades y otros </h3>
+        <input id="check-tools" type="radio" name="menu" />
+        <div class="project-section section-tools">
+            <h3 style="font-weight: 700">
+            <label for="check-tools"> Utilidades y otros 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-tools" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
         </div>
-            <div class="project">
+            <div class="project project-tools">
               <p class="title">
                 MaimoNides
               </p>
               <p class="description">
-                Mi proyecto final de Máster en Informática Industrial. Es un sistema de publicidad empotrado, en C para implementarse en un Raspberry PI.
+                Mi proyecto final de Máster en Informática Industrial en la Universidad de Almería. Es un sistema de publicidad empotrado, <strong>en C</strong> para implementarse <strong>en un Raspberry PI</strong>.<br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
@@ -233,59 +403,120 @@
                   <a class="social" target="_blank" href="https://savannah.nongnu.org/projects/maimonides/"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+            <div class="project project-tools">
               <p class="title">
                 License Header Script
               </p>
               <p class="description">
-                Sencillo  script en BASH para automatizar la inserción de la cabecera de licencia en un programa de software libre cualquiera.
+                Sencillo script en <strong>BASH</strong> para automatizar la inserción de la cabecera de licencia en un programa de software libre cualquiera.<br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a class="social" target="_blank" href="https://github.com/gentooza/license_header_script"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+            <div class="project project-tools">
               <p class="title">
                 QueTalk
               </p>
               <p class="description">
-                Desarrollado en C++, QXMPP, QT5.  programa descontinuado ya que estaba pensado para ser un cliente de Kontalk en el sistema para móviles de Ubuntu. Fork del programa <a target="_blank" href="https://github.com/chloerei/qtalk">QTalk desarrollado por REI.</a>
+                Desarrollado <strong>en C++, QXMPP, QT5</strong>.  programa descontinuado ya que estaba pensado para ser un cliente de Kontalk en el sistema para móviles de Ubuntu. Fork del programa <a target="_blank" href="https://github.com/chloerei/qtalk">QTalk desarrollado por REI.</a><br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a class="social" target="_blank" href="https://github.com/gentooza/QueTalk"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-
-        <div class="project-section">
-          <h3 style="font-weight: 700"> Videojuegos! </h3>
+        <input id="check-robotics" type="radio" name="menu" />
+        <div class="project-section section-robotics">
+            <h3 style="font-weight: 700">
+            <label for="check-robotics"> Aplicaciones sobre robótica 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-robotics" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
         </div>
-            <div class="project">
+            <div class="project project-robotics">
+              <p class="title">
+                Bitbloq Offline Reborn
+              </p>
+              <p class="description">
+                Aplicación para la programación local de los robots Zowie de BQ. Con la caída de la empresa y la divisón de su sección robótica ahora sólo ofrecen la versión online de la herramienta y bajo registro. ¡Yo quiero que mis hijos pueda programarlo en un entorno local y seguro!Bajo licencia libre GPLv3+.
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://github.com/gentooza/bitbloq-offline-reborn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+        <input id="check-hybrid" type="radio" name="menu" />
+        <div class="project-section section-hybrid">
+            <h3 style="font-weight: 700">
+            <label for="check-hybrid"> Aplicaciones híbridas para móvil 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-hybrid" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
+        </div>
+            <div class="project project-hybrid">
+              <p class="title">
+                DentalTEA
+              </p>
+              <p class="description">
+                Usando <strong>Typescript, Ionic, y Cordova</strong>, aplicación híbrida para las citas al dentista de personas con trastorno autista, para la asociación Autismo Córdoba. <br/>Bajo licencia libre GPLv3+.
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://bitbucket.org/pixelada/appautismocordoba/src/master/"><i class="fa fa-bitbucket fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+            <div class="project project-hybrid">
+              <p class="title">
+                semApp
+              </p>
+              <p class="description">
+                Usando <strong>Typescript, Ionic, y Cordova</strong>, aplicación híbrida de carnet virtual de los afiliados de un conocido sindicato andaluz.<br/>Bajo licencia libre GPLv3+.
+              </p>
+              <p class="project_links">
+                enlaces:<br/>
+                  <a target="_blank" href="https://github.com/Pixelada-S-Coop-And/SEM-app"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              </p>
+            </div>
+        <input id="check-videogames" type="radio" name="menu" />
+        <div class="project-section section-videogames">
+            <h3 style="font-weight: 700">
+            <label for="check-videogames"> Videojuegos! 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-videogames" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
+        </div>
+            <div class="project project-videogames">
               <p class="title">
                 Freedom Fighters of Might and Magic
               </p>
               <p class="description">
-                Un día me puse a aprender python y pygame y dejé esto a medias :-e un clon apenas planteado del Heroes of Might And Magic II.
+                Un día me puse a aprender <strong>Python y Pygame</strong> y dejé esto a medias :-e un clon apenas planteado del Heroes of Might And Magic II.<br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a class="social" target="_blank" href="https://github.com/gentooza/Freedom-Fighters-of-Might-Magic"><i class="fa fa-gnu fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-            <div class="project">
+            <div class="project project-videogames">
               <p class="title">
                 GSResolver
               </p>
               <p class="description">
-                Aprendiendo como programar C++ usando plugins, me puse a desarrollar un resolutor de sudokus, es un programa de consola usando ncurses que implementa los algoritmos personalizados de resolución en forma de librerías .so independientes y dinámicamente cargadas en programa.
+                Aprendiendo como programar <strong>C++</strong> usando plugins, me puse a desarrollar un resolutor de sudokus, es un programa de consola usando ncurses que implementa los algoritmos personalizados de resolución en forma de librerías .so independientes y dinámicamente cargadas en programa.<br/>Bajo licencia libre GPLv3+.
               </p>
               <p class="project_links">
                 enlaces:<br/>
                   <a target="_blank" href="https://github.com/gentooza/GSResolver"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
               </p>
             </div>
-
  
   </div>
 </div>
@@ -294,7 +525,7 @@
     <footer>
       <div class="footer-left">
         <p>
-          ©2023 Joaquín Cuéllar, license <a href="https://github.com/gentooza/gentooza_web"> AGPLv3+</a>
+          ©2024 Joaquín Cuéllar, license <a href="https://github.com/gentooza/gentooza_web"> AGPLv3+</a>
           unless otherwise noted.
           Generated by <a href= "http://docs.getpelican.com/">Pelican</a>
         </p>
@@ -311,3 +542,24 @@
     </footer>
   </body>
 </html>
+<!--
+# This file is part of Gentooza's web page
+#
+# Copyright 2021-2022, Joaquín Cuéllar <joa.cuellar (at) riseup (dot) net>
+#
+# Gentooza's web page is free software:
+# you can redistribute it and/or modify it under the terms of
+# the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Gentooza's web page is distributed in the hope that
+# it will be useful, but WITHOUT ANY WARRANTY;
+# without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with Gentooza's web page.
+# If not, see <https://www.gnu.org/licenses/>.
+-->
