@@ -80,7 +80,7 @@ conil = project()
 conil.title = "Portal Conilhospeda"
 conil.description = "<strong> Busco mantenedora/or para este proyecto!!</strong> Usando <strong>Python y Django</strong> Es el <a target=\"_blank\" href=\"https://conilhospeda.com\"> portal web de reservas de la Cooperativa Conilhospeda.</a> Es un proyecto muy bonito que proviene de la <a target=\"_blank\" href=\"https://enreda.coop\">Cooperativa Enreda </a>, paso a manos de <a target=\"_blank\" href=\"https://pixelada.org\">Pixelada</a> y finalmente se mantiene dentro <a target=\"_blank\" href=\"https://elalambre.org\">del Alambre.</a> Se está cobrando un mantenimiento mensual por los trabajos!<br/>Es software privativo (pero tenemos planes de abrirlo!)."
 conil.category = "social"
-projects.append(socias)
+projects.append(conil)
 
 socias = project()
 socias.title = "SociasMercao"
