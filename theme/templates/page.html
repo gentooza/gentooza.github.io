@@ -21,6 +21,34 @@
 -->
 {% extends "base.html" %}
 
+{% block extrastyles %}
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/projects.css"/>
+<style>
+{% for c_slug, c_name in PROY_CATEGORIES %}
+#check-{{ c_slug }}, .project-{{ c_slug }} {
+    display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.section-{{ c_slug }} span {
+    display: inline;
+    float: right;
+    margin-right: 1vw;
+}
+
+#check-{{ c_slug }}:checked ~  .project-{{ c_slug }}  {
+    display: block;
+}
+
+#check-{{ c_slug }}:checked ~ .section-{{ c_slug }} span {
+    display: none;
+}
+
+{% endfor %}
+</style>
+{% endblock extrastyles %}
 {% block content %}
 <div class="content">
   <div class="article">
@@ -28,12 +56,19 @@
     {{ page.content }}
     {% if "pages/proyectos.html" == output_file %}
       {% for c_slug, c_name in PROY_CATEGORIES %}
-        <div class="project-section">
-          <h3 style="font-weight: 700"> {{ c_name }} </h3>
+        <input id="check-{{ c_slug }}" type="radio" name="menu" />
+        <div class="project-section section-{{ c_slug }}">
+            <h3 style="font-weight: 700">
+            <label for="check-{{ c_slug }}"> {{ c_name }} 
+                <span class="section-more-icon"> 
+                <i class="fa fa-plus more-{{ c_slug }}" aria-hidden="true"></i> 
+                </span> 
+            </label>
+            </h3>
         </div>
         {% for p in PROJECTS %}
           {% if p.category == c_slug %}
-            <div class="project">
+            <div class="project project-{{ c_slug }}">
               <p class="title">
                 {{ p.title }}
               </p>
@@ -61,7 +96,6 @@
             </div>
           {% endif %}
         {% endfor %}
-
       {% endfor %} 
     {% endif %}
   </div>
