@@ -141,7 +141,15 @@ projects.append(appsem)
 
 mpich = project()
 mpich.title = "Entorno para pŕacticas con MPICH bajo docker"
-mpich.description = "Basado en el trabajo de <a target=\"_blank\" href=\"https://github.com/NLKNguyen/alpine-mpich\"> N. Nguyen </a>, he actualizado y modificado una imagen y un clúster de Alpine GNU/Linux en docker, para poder realizar prácticas de Arquitecturas Paralelas, asignatura de 3º del Grado de Informática en su mención de <strong> Arquitectura de Computadores </strong>, Arquitecturas Paralelas, para poder emplear con mínimo esfuerzo, <strong> C y MPICH </strong> y realizar prácticas de programación distribuida pudiendo medir recursos y tiempo de cómputo con un hardware simulado pero limitado.<br/>Bajo licencia libre MIT."
+mpich.description = '''Basado en el trabajo de
+     <a target=\"_blank\" href=\"https://github.com/NLKNguyen/alpine-mpich\"> N. Nguyen </a>,
+     he actualizado y modificado una imagen y un clúster de Alpine GNU/Linux en docker, 
+    para poder realizar prácticas de Arquitecturas Paralelas, asignatura de 3º del Grado de Informática
+     en su mención de <strong> Arquitectura de Computadores</strong>.<br/>
+    La idea es poder emplear <strong> C y MPICH </strong>
+     y realizar prácticas de programación distribuida pudiendo medir recursos y tiempo de cómputo
+     con un hardware simulado pero limitado.
+    <br/>Bajo licencia libre MIT.'''
 mpich.github = "https://github.com/gentooza/alpine-mpich"
 mpich.doc = "https://ieeexplore.ieee.org/document/7868429"
 mpich.category = "guides"
